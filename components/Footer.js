@@ -8,32 +8,30 @@ export default function Footer() {
           <div className="flex flex-row justify-between -mt-8 md:mt-0 md:py-2 bg-veryDarkBlue">
             <Link href="/">
               <a className="p-6">
-                {/* <span className="mr-2 bg-blue-900"> */}
                   <Image src="/assets/logo-white.svg" width="50" height="20" fill="#FFF"></Image>
-                {/* </span> */}
               </a>
             </Link>
           </div>
           <div className="flex flex-col md:flex-row">
               <div className='flex flex-row justify-evenly'>
-                <ul className="flex flex-col md:flex-row gap-5 md:gap-6">
+                <ul className="flex flex-col md:flex-row justify-end gap-5 md:gap-6">
                     <li className="py-3 md:py-0 md:pb-4">
                         <Link href="/portfolio">
-                            <a className="hover:text-lightCyan transition ease-in-out duration-150">
+                            <a className="text-darkGrey transition ease-in-out duration-150 pt-2">
                                 Portfolio
                             </a>
                         </Link>
                     </li>
                     <li className="py-3 md:py-0 md:pb-4">
                         <Link href="/about">
-                            <a className="hover:text-lightCyan transition ease-in-out duration-150">
+                            <a className="text-darkGrey transition ease-in-out duration-150">
                                 About Us
                             </a>
                         </Link>
                     </li>
                     <li className="py-3 md:py-0 md:pb-4">
                         <Link href="/contact">
-                            <a className="hover:text-lightCyan transition ease-in-out duration-150">
+                            <a className="text-darkGrey transition ease-in-out duration-150">
                                 Contact
                             </a>
                         </Link>

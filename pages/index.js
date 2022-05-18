@@ -1,43 +1,34 @@
-import Image from 'next/image'
-import Link from 'next/link'
-// import styles from '../styles/custom.css'
+import Image from 'next/image';
+import Link from 'next/link';
+import Slideshow from '../components/Slideshow';
 
 export default function Home() {
   return (
     <div className="w-full mx-auto max-w-4xl">
+
+      <Slideshow />
+
       <div className='hero flex justify-center relative z-0 md:max-w-2xl lg:max-w-4xl mx-auto'>
         <div className='relative z-10 bg-black bg-opacity-5'>
           <img className="flex w-screen md:hidden" src="/assets/home/mobile/image-hero-paramour.jpg" layout="responsive"></img>          
           <img className="hidden md:flex lg:hidden" src="/assets/home/tablet/image-hero-paramour.jpg" layout="responsive"></img>
-          <img className="hidden lg:flex" src="/assets/home/desktop/image-hero-paramour.jpg" layout="responsive"></img>
         </div>
         
-        <div className='absolute z-10 left-0 top-1/4 text-white max-w-xl md:max-w-2xl lg:max-w-4xl px-12 md:px-24 lg:px-16'>
-          <h2 className='font-bold text-4xl md:text-5xl lg:text-6xl pb-6'>Project<br></br>Paramour</h2>
-          <p className='w-full text-lg lg:w-1/2 py-4'>Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.</p>
-          <div className='flex'>
-            <Link href="/portfolio">
-              <a className='bg-veryDarkBlue hover:bg-darkGrey px-8 py-4 text-start'>See Our Portfolio
-              <span className='pl-4'>
-                <Image className="text-white" src="/assets/icons/icon-arrow.svg" height="10" width="10"></Image>
-              </span>
-              </a>
-            </Link>
+        <div className='absolute z-10 left-0 top-1/4 text-white max-w-xl md:max-w-2xl lg:max-w-4xl'>
+          <div id="paramour" className='px-12 md:px-24 lg:hidden lg:px-16'>
+            <h2 className='font-bold text-4xl md:text-5xl lg:text-6xl pb-6'>Project<br></br>Paramour</h2>
+            <p className='w-full text-lg lg:w-1/2 py-4'>Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.</p>
+            <div className='flex'>
+              <Link href="/portfolio">
+                <a className='bg-veryDarkBlue hover:bg-darkGrey px-8 py-4 text-start'>See Our Portfolio
+                <span className='pl-4'>
+                  <Image className="text-white" src="/assets/icons/icon-arrow.svg" height="10" width="10"></Image>
+                </span>
+                </a>
+              </Link>
+            </div>
           </div>
-          
         </div>
-
-        {/* <div>Seraph Station
-        The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations. 
-        See Our Portfolio 
-        Federal II Tower 
-        A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches. 
-        See Our Portfolio 
-        Trinity Bank Tower 
-        Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives. 
-        See Our Portfolio 
-        01 02 03 04 </div> */}
-
       </div>
       
       <div className='welcome flex flex-row w-full pt-24 pb-16 px-12 lg:px-0 max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto'>
@@ -101,11 +92,11 @@ export default function Home() {
           </div>
 
           {/* Project 1*/}
-          <div className='bg-black bg-opacity-5 relative z-0 right-0 mx-auto'>
+          <div className='relative z-0 right-0 mx-auto'>
             <img className="md:hidden" src="/assets/portfolio/mobile/image-del-sol.jpg" layout="responsive" alt="Project del sol screenshot"></img>
             <img className="hidden md:flex md:bg-cover lg:hidden" src="/assets/portfolio/tablet/image-del-sol.jpg" layout="responsive" alt="Project del sol screenshot"></img>
             <img className="hidden lg:flex" src="/assets/portfolio/desktop/image-del-sol.jpg" layout="responsive" alt="Project del sol screenshot"></img>
-
+              
             <div className='absolute z-10 bottom-5 left-5'>
               <p className='font-bold text-2xl'>Project Del Sol</p>
               <Link href="/portfolio">
