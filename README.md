@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Arch Studio Screenshot](./screenshot.png)
+![Arch Studio Screenshot](/assets/screenshot.png)
 
 ### Links
 
