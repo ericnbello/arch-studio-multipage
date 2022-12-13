@@ -1,9 +1,32 @@
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: false,
+//   images: {
+//     domains: ['maps.googleapis.com'],
+//   },
+//   outputStandalone: true,
+// }
+
+// module.exports = nextConfig
+
+// // module.exports = {
+// //   reactStrictMode: false,
+// //   images: {
+// //     domains: ['maps.googleapis.com'],
+// //   },
+// //   output: 'standalone',
+// // }
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+module.exports = {
+  output: 'standalone',
+  exportPathMap: async function (defaultPathMap) {
+    return {
+      '/': { page: '/' },
+    };
+  },
   images: {
-    domains: ['maps.googleapis.com'],
+    loader: 'akamai',
+    path: '',
   },
 }
-
-module.exports = nextConfig

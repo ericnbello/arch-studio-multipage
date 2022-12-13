@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Image from "next/image";
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';

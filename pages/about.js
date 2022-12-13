@@ -1,3 +1,4 @@
+/* eslint-disable */
 import leaderData from "../constants/leaderData";
 
 export default function About() {
