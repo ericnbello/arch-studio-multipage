@@ -1,12 +1,5 @@
 /* eslint-disable */
 import ContactForm from '../components/ContactForm';
-
-// const imageLoader = ({ src, width, quality }) => {
-//     src = 'maps/api/staticmap?&zoom=5&size='
-//     width = '800'
-    
-//     return `https://maps.googleapis.com/${src}${width}x400&maptype=roadmap&markers=color:black%7Clabel:S%7C35.952461,-83.991531&markers=color:black%7Clabel:C%7C29.897430,-97.827507&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}${quality || 75}`
-//   }
   
 export default function Contact() {
     return(
@@ -68,7 +61,7 @@ export default function Contact() {
             </div>
 
             <div className="w-full py-12 mx-auto map md:px-12 lg:px-0">
-                <img className="px-12" src={`https://maps.googleapis.com/maps/api/staticmap?&zoom=5&size=800x400&maptype=roadmap&markers=color:black%7Clabel:S%7C35.952461,-83.991531&markers=color:black%7Clabel:C%7C29.897430,-97.827507&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`} width="2000" height="1200"></img>
+                <img className="px-12" src='https://maps.googleapis.com/maps/api/staticmap?&zoom=5&size=800x400&maptype=roadmap&markers=color:black%7Clabel:S%7C35.952461,-83.991531&markers=color:black%7Clabel:C%7C29.897430,-97.827507&key=AIzaSyDlF97cfMQ9dUvJgjuLAWcEvhHK0LRq46Q' width="2000" height="1200"/>
             </div>
             
             <div className='justify-center max-w-xl px-12 pt-10 pb-16 mx-auto contact-form md:max-w-2xl lg:max-w-4xl lg:px-0 lg:flex lg:flex-row lg:gap-16'>
