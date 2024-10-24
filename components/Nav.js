@@ -12,7 +12,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className='flex flex-wrap items-center max-w-xl gap-12 px-12 pb-6 mx-auto bg-white text-darkGrey md:max-w-2xl lg:max-w-4xl md:px-12 lg:px-0'>
+    <nav className='flex flex-wrap items-center max-w-xl gap-12 pb-6 mx-auto bg-white md:px-12 text-darkGrey md:max-w-2xl lg:max-w-4xl lg:px-0'>
       <Link href='/'>
         <a className='inline-flex items-center p-2 mr-4'>
           <img src="/assets/logo.svg" width="75" height="40" unoptimized>
